@@ -12,10 +12,6 @@ def home(request):
     return render(request, 'pages/home.html', data)
 
 
-def cars(request):
-    return render(request, 'pages/cars.html')
-
-
 def services(request):
     return render(request, 'pages/services.html')
 
