@@ -23,3 +23,17 @@ def car_detail(request, id):
         'single_car_detail': single_car_detail,
     }
     return render(request, 'cars/car_detail.html', data)
+
+
+def search(request):
+    cars = Car.objects.order_by('created_date')
+
+    if 'Keyword' in request.GET:
+        keyword = request.GET['Keyword']
+        if keyword:
+            cars = cars.filter(description__icontains=keyword)
+
+    data = {
+        'cars': cars,
+    }
+    return render(request, 'cars/search.html', data)
