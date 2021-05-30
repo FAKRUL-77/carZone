@@ -1,0 +1,23 @@
+#header{
+    background-color: #FFFFFF !important;
+    color: red !important;
+    box-shadow: 0 0 3px 0 #ff0000;
+}
+#header a:link, #header a:visited{
+    color: black !important;
+}
+
+div.breadcrumbs{
+    background-color: black;
+}
+
+.module h2, .module caption, .inline-group h2{
+    background-color: black;
+}
+
+.button, input[type=submit], input[type=button], .submit-row input, a.button{
+    background-color: #4e5557;
+}
+.button.default, input[type=submit].default, .submit-row input.default{
+    background-color: #1f2121;
+}
